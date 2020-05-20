@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/**
+ * font-family: 'Montserrat', sans-serif;
+ * font-family: 'Montserrat Alternates', sans-serif;
+*/
+
+@import 'b1.css';
+@import 'b2.css';
+@import 'b3.css';
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body * {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  user-select: none;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+h2.buttons-title {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 6vw;
+  margin-left: 4vw;
+}
+
+.buttons-container {
+  width: 95vw;
+  padding: 2.5vw;
+  
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 30vh;
+}
+
+.button-container {
+  height: 100%;
+  width: 100%;
+
+  border-radius: 1vw;
+  box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.15);
+
+  transition: background-color .1s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container.dark-style {
+  background-color: #2E2E2E;
+}
